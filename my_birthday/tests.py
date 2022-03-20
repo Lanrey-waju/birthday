@@ -1,6 +1,8 @@
+import imp
 from django.test import TestCase, Client
 from django.urls import reverse
 
+from datetime import date
 # Create your tests here.
 class BirthdayTest(TestCase):
     """Check if birthday logic is correct"""
@@ -17,5 +19,6 @@ class BirthdayTest(TestCase):
         self.assertContains(self.response, 'Birthday')
     
     def test_birthday_logic(self):
+        pass
         
         

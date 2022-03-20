@@ -2,7 +2,7 @@ from django.shortcuts import render
 from datetime import datetime, timedelta, date
 
 # Create your views here.
-def birthday_check(request):
+def birthday_check_view(request):
     """Creste a view that checks if today is Abdulmumin's birthday (27th of December)"""
     birthday_today = False
     current_year = date.today().year
@@ -10,7 +10,6 @@ def birthday_check(request):
     if birthday==date.today():
         birthday_today = True
     days_remaining = (birthday - date.today()).days
-    # days_remaining = days_remaining.days
     print(birthday, days_remaining)
     return render(
         request,
