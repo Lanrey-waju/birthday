@@ -6,6 +6,7 @@ name = "pypi"
 [packages]
 django = "==4.0.3"
 python-decouple = "==3.6"
+flake8 = "==4.0.1"
 
 [dev-packages]
 
